@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+<table name="customer" resource="default" comment="Create table using declarative schema">
+<column xsi:type="int" name="customer_id" padding="10" identity="true" unsigned="true" nullable="false" comment="Customer Id"/>
+<column xsi:type="varchar" name="name" nullable="false" length="255" comment="Name"/>
+<column xsi:type="varchar" name="email" nullable="false" length="255" comment="Email"/>
+<column xsi:type="varchar" name="telephone" nullable="false" length="255" comment="Telephone"/>
+<column xsi:type="timestamp" name="created_at" comment="Created At"/>
+<column xsi:type="timestamp" name="update_time" comment="Updated At"/>
+<column xsi:type="timestamp" name="date_at" comment="Date At"/>
+<column xsi:type="varchar" name="gender" nullable="false" length="1" comment="Add New Filed"/>
+<column xsi:type="text" name="country" nullable="false" comment="Add country"/>
+<constraint xsi:type="primary" referenceId="PRIMARY">
+<column name="customer_id"/>
+</constraint>
+</table>
+</schema>
