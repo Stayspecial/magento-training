@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Learning_SecondUnit::menu" title="DCKAP Menu" module="Learning_SecondUnit" sortOrder="51" resource="Learning_SecondUnit::menu"/>
-        <add id="Learning_SecondUnit::post" title="All Customers" module="Learning_SecondUnit" sortOrder="10" action="learning_secondunit/post" resource="Learning_SecondUnit::post" parent="Learning_SecondUnit::menu"/>
-        <add id="Learning_SecondUnit::hello_configuration" title="Configuration" module="Learning_SecondUnit" sortOrder="99" parent="Learning_SecondUnit::menu" action="adminhtml/system_config/edit/section/helloworld" resource="Learning_SecondUnit::helloworld_configuration"/>
-    </menu>
-</config>
