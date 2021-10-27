@@ -1,0 +1,8 @@
+<?php 
+$helper = \Magento\Framework\App\ObjectManager::getInstance()->get('Learning\ThirdUnit\Helper\Data'); 
+//echo 'testing';
+//echo $helper->isEnable();
+if($helper->isEnable()=='1') : ?>
+<span style="font-weight: 400;"><?php echo $block->showCustomView(); ?> </span>
+
+<?php endif; ?>
